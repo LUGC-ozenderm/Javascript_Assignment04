@@ -2,7 +2,7 @@ async function findThings() {
     const apiKey = '4fa16c23'; 
     const movie = document.getElementById('searchInput').value;
 
-    const response = await fetch(`http://www.omdbapi.com/?t=${movie}&apikey=${apiKey}`);
+    const response = await fetch(`https://www.omdbapi.com/?t=${movie}&apikey=${apiKey}`);
     const data = await response.json();
 
     if (data.Response === 'False') {
